@@ -15,7 +15,7 @@ def logger(old_function):
         function_time = str(datetime.now())[:-7]
         function_value = f"return: {value}"
 
-        with open(file=log_path, mode="a", newline="\n") as f:
+        with open(file=log_path, mode="a") as f:
             f.write(f"{function_name} | {function_time} | {function_args} | {function_kwargs} | {function_value}\n")
 
         return value
@@ -40,7 +40,7 @@ def smart_logger(file_path):
             function_time = str(datetime.now())[:-7]
             function_value = f"return: {value}"
 
-            with open(file=log_path, mode="a", newline="\n") as f:
+            with open(file=log_path, mode="a") as f:
                 f.write(f"{function_name} | {function_time} | {function_args} | {function_kwargs} | {function_value}\n")
 
             return value
