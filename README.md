@@ -1,4 +1,4 @@
-# Домашнее задание. «Iterators. Generators. Yield»
+# Домашнее задание к лекции 3. «Decorators»
 
 ## _[logers library](core/loger.py)_
 1. ``` logger -> декоратор логирует в main.log ```
